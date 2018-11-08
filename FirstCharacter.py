@@ -39,7 +39,7 @@ class FirstCharacter:
         print("4) Say something")
 
 
-        Ans1 = input("Enter action id")
+        Ans1 = input("Enter action id: ")
 
         if Ans1 == "1":
             pass
@@ -58,8 +58,28 @@ class FirstCharacter:
 
     def optaccessmemory(self):
         counter = 0
+        counter2 = 10
         while True:
             dot = "."
+            print(dot * counter)
+            counter += 1
+            if counter == 10:
+                break
+
+
+        while True:
+            dot = "."
+            print(dot * counter2)
+            counter2 -= 1
+
+            if counter2 == 0:
+                break
+
+        print("Memory search complete")
+        print("ability gained: syphin")
+
+        self.player.addabilities(Player.syphin())
+
 
 
 

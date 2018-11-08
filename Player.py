@@ -5,6 +5,7 @@ class Player:
     Name = ""
     goodrep = []
     badrep = []
+    abilities = {"syphin":None}
 
     def __init__(self):
         pass
@@ -28,7 +29,15 @@ class Player:
     def addbadrep(self):
         self.badrep.append(-1)
 
+    def addabilities(self,name,abbilityfuntion):
+        self.abilities[name] = abbilityfuntion
+
+    def syphin(self):
+        pass
 
 
+x = Player()
+x.addabilities("syphin",x.syphin())
+print(Player.abilities)
 
 
