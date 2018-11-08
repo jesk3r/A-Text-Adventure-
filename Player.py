@@ -3,7 +3,8 @@ from Startingworld import *
 class Player:
 
     Name = ""
-
+    goodrep = []
+    badrep = []
 
     def __init__(self):
         pass
@@ -20,6 +21,12 @@ class Player:
 
     def getname(self):
         return self.Name
+
+    def addgoodrep(self):
+        self.goodrep.append(1)
+
+    def addbadrep(self):
+        self.badrep.append(-1)
 
 
 

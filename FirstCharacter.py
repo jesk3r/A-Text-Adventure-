@@ -6,10 +6,11 @@ class FirstCharacter:
 
     charactername = "Torque"
 
-    def __init__(self,Name):
+    def __init__(self,player):
 
         self.CharacterName = "Torqe"
-        self.playername = Name
+        self.player = player
+        self.playername = player.getname()
 
     def givecharactername(self):
         return self.characterName
@@ -23,9 +24,14 @@ class FirstCharacter:
         time.sleep(1)
         print("{0}: Every body {1} is a awake".format(self.CharacterName,self.playername))
         time.sleep(1)
-        print("Docter: How is even possible")
+        print("Docter: What,how is even possible \n")
 
-        print("Systems online")
+
+        for i in reversed(range(0,6)):
+            print(i)
+
+        print("\nSystem reboot complete")
+
         print("...what will you do...")
         print("1) Listen")
         print("2) Access Memory")
@@ -45,3 +51,16 @@ class FirstCharacter:
             pass
         else:
             print("action id invalid")
+
+
+    def optlisten(self):
+        self.player.addgoodrep()
+
+    def optaccessmemory(self):
+        counter = 0
+        while True:
+            dot = "."
+
+
+
+

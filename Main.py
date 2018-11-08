@@ -35,11 +35,6 @@ def main():
 
 
 
-
-
-
-
-
 def Delay_msg(text,speed):
     for i in text:
         sys.stdout.write(i)
