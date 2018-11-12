@@ -5,7 +5,8 @@ class Player:
     Name = ""
     goodrep = []
     badrep = []
-    abilities = {"syphin":None}
+    abilities = {"syphin":""}
+    level = 0
 
     def __init__(self):
         pass
@@ -33,11 +34,21 @@ class Player:
         self.abilities[name] = abbilityfuntion
 
     def syphin(self):
-        pass
+        print("             *               *   ")
+        print("              *               *   ")
+        print("              *               *   ")
+        print("             *               *   ")
+        print("              *               *   ")
+        print("              *               *   ")
+        print("             *               *   ")
+        print("              *               *   ")
+        print("              *               *   ")
+
+        print("you have syphined")
+
+    def addlevel(self):
+        self.level += 1
 
 
-x = Player()
-x.addabilities("syphin",x.syphin())
-print(Player.abilities)
 
 

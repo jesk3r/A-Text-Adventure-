@@ -12,26 +12,22 @@ def main():
     player.givename("XDeath")
     sw = Startingworld(player)
 
+    player.addabilities("syphin",player.syphin)
+
+
     #start of the game
     Delay_msg("Welcome to the world of",.05)
     print("\n\n")
     print("\t Chrono Crisis")
 
-    time.sleep(5)
+    time.sleep(4)
+
     Delay_msg("You wake up\nEvery thing is a haze",0.01)
-
-    Delay_msg("\ntype to say something",0.01)
-
-
+    Delay_msg("\ntype to say something:\n",0.01)
 
     input()
 
     sw.SFirstCharacter()
-
-
-
-
-
 
 
 
