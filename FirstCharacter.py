@@ -23,11 +23,11 @@ class FirstCharacter:
 
         print("{0}: YOUR AWAKE!".format(self.CharacterName))
         time.sleep(1)
-        print("{0}: NO WAY, YOUR AWAKE!".format(self.CharacterName))
+        print("{0}: NO WAY, HOW ARE YOU AWAKE!".format(self.CharacterName))
         time.sleep(1)
-        print("{0}: Every body {1} is a awake".format(self.CharacterName,self.playername))
+        print("{0}: Every body {1} is a awake".format(self.CharacterName,self.player.getname()))
         time.sleep(1)
-        print("Docter: What,how is even possible \n")
+        print("Docter: What,how is this even possible \n")
         time.sleep(1)
 
         #counts back wards from 5
@@ -47,25 +47,34 @@ class FirstCharacter:
         Ans1 = input("Enter action id: ")
 
         #cheaks the if the ans matches
-        if Ans1 == "1":
-            print("you decided to listen")
-            self.optlisten()
-        elif Ans1 == "2":
-            print("your have accessed your memory")
-            self.optaccessmemory()
-        elif Ans1 == "3":
-            pass
-        elif Ans1 == "4":
-            pass
-        else:
-            print("action id invalid")
+        while True or False:
+            if Ans1 == "1":
+                print("you decided to listen")
+                self.optlisten()
+                break
+            elif Ans1 == "2":
+                print("your have accessed your memory")
+                self.optaccessmemory()
+                break
+            elif Ans1 == "3":
+                print("Servo failure")
+                print("Magnetic interference")
+                time.sleep(2)
+                self.optlisten()
+            elif Ans1 == "4":
+                print("Firmware failure")
+                print("Magnetic interference")
+                time.sleep(2)
+                self.optlisten()
+            else:
+                print("action id invalid")
 
     #the option to listen
     def optlisten(self):
         self.player.addgoodrep()
         print("you got good rep")
 
-        print("{0}: We don't know if you remember this but, your a time cyborg time traveller sent to fight in the chrono war.".format(self.CharacterName))
+        print("{0}: We don't know if you remember this but, your a time traveller cyborg sent to fight in the chrono war.".format(self.CharacterName))
         time.sleep(1)
         print("{0}: The war has been going on forever, its a fixed point in time.It cant be changed, well, that's what we though.".format(self.CharacterName))
         time.sleep(1)
@@ -169,7 +178,7 @@ class FirstCharacter:
                 self.optlisten()
                 break
             elif Ans1 == "4":
-                print("Servo failure")
+                print("Firmware failure")
                 print("Magnetic interference")
                 time.sleep(2)
                 self.optlisten()
