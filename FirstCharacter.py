@@ -6,15 +6,18 @@ class FirstCharacter:
 
     charactername = "Torque"
 
+    #init the varables
     def __init__(self,player):
 
         self.CharacterName = "Torqe"
         self.player = player
         self.playername = player.getname()
 
+    #returns the characets name
     def givecharactername(self):
         return self.characterName
 
+    #The starting dialog for the character
     def introdialog(self):
 
 
@@ -27,6 +30,7 @@ class FirstCharacter:
         print("Docter: What,how is even possible \n")
         time.sleep(1)
 
+        #counts back wards from 5
         for i in reversed(range(0,6)):
             print(i,flush=True)
             time.sleep(1)
@@ -42,6 +46,7 @@ class FirstCharacter:
 
         Ans1 = input("Enter action id: ")
 
+        #cheaks the if the ans matches
         if Ans1 == "1":
             print("you decided to listen")
             self.optlisten()
@@ -55,7 +60,7 @@ class FirstCharacter:
         else:
             print("action id invalid")
 
-
+    #the option to listen
     def optlisten(self):
         self.player.addgoodrep()
         print("you got good rep")
@@ -78,6 +83,7 @@ class FirstCharacter:
         print("1) Yes i will")
         print("2) No ")
 
+        #Ask again if the input is in valid
         while True and True:
             Ans1 = input("Enter action id: ")
 
@@ -90,15 +96,15 @@ class FirstCharacter:
             else:
                 print("action id invalid")
 
-
+    #the option for using syphin
     def optusesyphin(self):
         print("charging syphin")
         time.sleep(1)
-        self.player.syphin()
+        self.player.syphin()# does the animation for abillity
         time.sleep(1)
         print("\nyou used syphin")
         print("you gained bad rep")
-        self.player.addbadrep()
+        self.player.addbadrep()#add bad rep
 
         print("Computer Voice: There's a blinding flash of light,as you look around the room you see what you actions have done")
         time.sleep(3)
@@ -114,6 +120,8 @@ class FirstCharacter:
     def optaccessmemory(self):
         counter = 0
         counter2 = 10
+
+        #does an animation
         while True:
             dot = "."
             print(dot * counter)
@@ -121,7 +129,7 @@ class FirstCharacter:
             if counter == 10:
                 break
 
-
+        #does another animation
         while True or False:
             dot = "."
             print(dot * counter2)
@@ -144,6 +152,7 @@ class FirstCharacter:
         print("3) Get up")
         print("4) Say something")
 
+        #Ensures that the users acctions doesn't stop the program
         while True:
             Ans1 = input("Enter action id: ")
 

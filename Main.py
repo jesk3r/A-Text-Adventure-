@@ -12,9 +12,6 @@ def main():
     player.givename("XDeath")
     sw = Startingworld(player)
 
-    player.addabilities("syphin",player.syphin)
-
-
     #start of the game
     Delay_msg("Welcome to the world of",.05)
     print("\n\n")
@@ -27,7 +24,7 @@ def main():
 
     input()
 
-    sw.SFirstCharacter()
+    sw.SFirstCharacter()  # goes to the Starting world class method SFirstCharacter
 
 
 
