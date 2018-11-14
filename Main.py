@@ -14,7 +14,8 @@ def main():
     sw = Startingworld(player)
     pygame.mixer.init()
     music = os.getcwd()
-    pygame.mixer.music.load(music +"/DISTRICT 89' Best of Synthwave And Retro Electro Music Mix.mp3")
+    pygame.mixer.music.load(music +"/DISTRICT 89' Best of Synthwave And Retro Electro Music Mix.mp3")#Got this form youtube Cerator: ThePrimeThanatos
+
     pygame.mixer.music.play()
     #start of the game
     Delay_msg("Welcome to the world of",.05)
