@@ -2,12 +2,13 @@ from Startingworld import *
 
 class Player:
 
-    Name = ""
-    goodrep = []
-    badrep = []
-    abilities = {"syphin":""}
-    level = 0
+    Name = "" #Data type sting
+    goodrep = []#data tyep :list
+    badrep = []#data type :
+    abilities = {"syphin":""} #data type dictionary
+    level = 0#Data type intiger
 
+    #starting of class
     def __init__(self):
         pass
 

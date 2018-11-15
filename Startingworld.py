@@ -2,7 +2,7 @@ from FirstCharacter import *
 
 class Startingworld:
 
-    location = "Starting World"
+    location = "Starting World" # Data type:Sring
 
     #init all the variables
     def __init__(self,player):

@@ -4,14 +4,14 @@ import time
 
 class FirstCharacter:
 
-    charactername = "Torque"
+    charactername = "Torque"#data type string
 
     #init the varables
     def __init__(self,player):
 
-        self.CharacterName = "Torqe"
-        self.player = player
-        self.playername = player.getname()
+        self.CharacterName = "Torqe" #data type string
+        self.player = player #Data type stirng
+        self.playername = player.getname()#data type string
 
     #returns the characets name
     def givecharactername(self):
